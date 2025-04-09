@@ -21,7 +21,9 @@
     rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  </head>
 
 <body>
 
@@ -47,19 +49,17 @@
           </li>
 
           <li>
-            <a href="https://g.co/kgs/GpN6pgA" class="header-top-link" target="_blank">
-              <ion-icon name="location-outline"></ion-icon>
-
-               <span>+49 176 70440924</span>
+            <a href="tel:+4917670440924" class="header-top-link">
+              <ion-icon name="call-outline"></ion-icon>
+              <span>+49 176 70440924</span>
             </a>
           </li>
-
         </ul>
 
         <div class="wrapper">
           <ul class="header-top-social-list">
             <li>
-              <a href="#" class="header-top-social-link">
+              <a href="https://www.instagram.com/nsh.renovierung" class="header-top-social-link">
                 <ion-icon name="logo-instagram"></ion-icon> <!-- qetu qite instagramin king-->
               </a>
             </li>
@@ -74,7 +74,7 @@
       <div class="container">
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo-dark-1.png" alt="Homeverse logo" style="max-width: 200px; height: auto;">
+          <img src="./assets/images/logo-dark.png" alt="Homeverse logo" style="max-width: 200px; height: auto; ">
         </a>
 
         <nav class="navbar" data-navbar>
@@ -82,7 +82,7 @@
           <div class="navbar-top">
 
             <a href="#" class="logo">
-              <img src="./assets/images/logo-dark-1.png" alt="NSH logo">
+              <img src="./assets/images/logo-dark.png" alt="NSH logo">
             </a>
 
             <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
@@ -138,7 +138,7 @@
       -->
 
       <section class="hero" id="home">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
 
           <div class="hero-content">
 
@@ -176,13 +176,13 @@
       <section class="about" id="about">
         <div class="container">
 
-          <figure class="about-banner">
+          <figure class="about-banner" data-aos="fade-right">
             <img src="./assets/images/about-banner-11.png" alt="House interior">
 
             <img src="./assets/images/about-banner-2.png" alt="House interior" class="abs-img">
           </figure>
 
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-left">
 
             <p class="section-subtitle">Über uns</p>
 
@@ -254,11 +254,11 @@ Diese führen wir auf Anfrage durch – sprechen Sie uns einfach an.
       <section class="service" id="service">
         <div class="container">
 
-          <p class="section-subtitle">Unsere Dienstleistungen</p>
+          <p class="section-subtitle" data-aos="fade-up">Unsere Dienstleistungen</p>
 
-          <h2 class="h2 section-title">Unsere Hauptleistungen</h2>
+          <h2 class="h2 section-title" data-aos="fade-up" data-aos-delay="100">Unsere Hauptleistungen</h2>
 
-          <ul class="service-list">
+          <ul class="service-list" data-aos="zoom-in" data-aos-delay="100">
 
             <li>
               <div class="service-card">
@@ -842,11 +842,11 @@ Diese führen wir auf Anfrage durch – sprechen Sie uns einfach an.
       <section class="features">
         <div class="container">
 
-          <p class="section-subtitle">Was uns auszeichnet</p>
+          <p class="section-subtitle" data-aos="fade-up">Was uns auszeichnet</p>
 
-          <h2 class="h2 section-title">Warum NSH Renovierung?</h2>
+          <h2 class="h2 section-title" data-aos="fade-up" data-aos-delay="100">Warum NSH Renovierung?</h2>
 
-          <ul class="features-list">
+          <ul class="features-list" data-aos="fade-up" data-aos-delay="100">
 
             <li>
               <div class="features-card">
@@ -1169,7 +1169,7 @@ Diese führen wir auf Anfrage durch – sprechen Sie uns einfach an.
       <section class="cta">
         <div class="container">
 
-          <div class="cta-card">
+          <div class="cta-card" data-aos="zoom-in">
             <div class="card-content">
               <h2 class="h2 card-title">Bereit für Ihre Renovierung?</h2>
 
@@ -1198,7 +1198,7 @@ Diese führen wir auf Anfrage durch – sprechen Sie uns einfach an.
   -->
   <footer class="footer" id="footer">
     <div class="footer-top">
-      <div class="container footer-columns">
+      <div class="container footer-columns" data-aos="fade-up">
   
         <!-- LEFT: Logo -->
         <div class="footer-left">
@@ -1264,7 +1264,15 @@ Diese führen wir auf Anfrage durch – sprechen Sie uns einfach an.
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,
+    mirror: true,
+    duration: 800,
+    easing: 'ease-in-out'
+  });
+</script>
 </body>
 
 </html>
